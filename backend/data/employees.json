@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "employee_id": "EMP001",
+    "name": "System Admin",
+    "email": "admin@steelplant.com",
+    "phone": "9876543210",
+    "department": "Management",
+    "designation": "System Administrator",
+    "joining_date": "2026-01-01",
+    "password": "$2a$10$tpqWxEZV1mtK27OxuSAbDugA50x52l/1oJ9IJYnli.QNGLU/RbjmW",
+    "role": "Admin",
+    "shift_id": 1,
+    "created_at": "2026-06-24T05:04:30.478Z"
+  },
+  {
+    "id": 2,
+    "employee_id": "EMP002",
+    "name": "John Mechanic",
+    "email": "john@steelplant.com",
+    "phone": "9876543211",
+    "department": "Maintenance",
+    "designation": "Technician",
+    "joining_date": "2026-01-01",
+    "password": "$2a$10$xrdiO5EUdrwlSYJL1GGUJe7XF7Vq8VdmA4jmdX98CMFEwekXia4PG",
+    "role": "Technician",
+    "shift_id": 1,
+    "created_at": "2026-06-24T05:04:30.533Z"
+  },
+  {
+    "id": 3,
+    "employee_id": "EMP003",
+    "name": "Alice Operator",
+    "email": "alice@steelplant.com",
+    "phone": "9876543212",
+    "department": "Production",
+    "designation": "Control Room Operator",
+    "joining_date": "2026-01-01",
+    "password": "$2a$10$aEN5MfmA/lOMLHpTTszh9.QpAgDhXrHi1pkk/KpJutQtOOLtkk1V.",
+    "role": "Employee",
+    "shift_id": 1,
+    "created_at": "2026-06-24T05:04:30.533Z"
+  }
+]

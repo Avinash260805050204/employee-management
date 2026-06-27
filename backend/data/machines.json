@@ -1,0 +1,26 @@
+[
+  {
+    "machine_id": "BLAST-FURNACE-01",
+    "name": "Blast Furnace #1",
+    "location": "Shop Floor A",
+    "status": "Under Maintenance"
+  },
+  {
+    "machine_id": "ROLLING-MILL-02",
+    "name": "Hot Rolling Mill #2",
+    "location": "Shop Floor B",
+    "status": "Operational"
+  },
+  {
+    "machine_id": "CASTING-03",
+    "name": "Continuous Casting Machine #3",
+    "location": "Shop Floor C",
+    "status": "Operational"
+  },
+  {
+    "machine_id": "OXYGEN-CONV-04",
+    "name": "Basic Oxygen Converter #4",
+    "location": "Shop Floor A",
+    "status": "Operational"
+  }
+]

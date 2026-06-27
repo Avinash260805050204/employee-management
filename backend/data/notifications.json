@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "employee_id": "EMP001",
+    "title": "Breakdown Reported: Blast Furnace #1",
+    "message": "A Medium issue \"leak\" was reported on machine Blast Furnace #1 in Shop Floor A by Alice Operator.",
+    "type": "Maintenance",
+    "is_read": true,
+    "created_at": "2026-06-24T05:23:55.952Z"
+  },
+  {
+    "id": 2,
+    "employee_id": "EMP002",
+    "title": "New Maintenance Assignment",
+    "message": "You have been assigned to repair machine Blast Furnace #1 in Shop Floor A. Issue: leak.",
+    "type": "Maintenance",
+    "is_read": false,
+    "created_at": "2026-06-24T05:30:17.908Z"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "machine_id": "BLAST-FURNACE-01",
+    "issue_title": "leak",
+    "description": "leaking",
+    "priority": "Medium",
+    "image_url": null,
+    "assigned_technician_id": "EMP002",
+    "status": "Resolved",
+    "reported_by": "EMP003",
+    "created_at": "2026-06-24T05:23:55.902Z",
+    "updated_at": "2026-06-24T05:33:17.213Z"
+  }
+]
