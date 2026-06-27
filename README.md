@@ -1,70 +1,257 @@
 # Smart Steel Plant Employee & Operations Management System
 
-A full-stack, responsive web application for managing employees, attendance tracking, shift schedule allocations, leave applications, machine breakdown maintenance, and operational analytics in a steel plant.
+A full-stack, responsive web application designed to streamline employee administration and industrial operations in a steel manufacturing environment. The system provides modules for employee management, attendance tracking, leave management, shift scheduling, machine maintenance, notifications, and operational analytics through an intuitive role-based dashboard.
 
-## Tech Stack
-- **Frontend**: React.js (Vite), Tailwind CSS, React Router, Chart.js
-- **Backend**: Node.js, Express.js, JWT Authentication, Multer, Bcrypt
-- **Database**: MySQL
+## 🚀 Features
+
+* 👥 Employee Management (Add, Update, Delete, Search)
+* 📅 Attendance Management
+* 📝 Leave Management
+* ⏰ Shift Scheduling
+* 🔧 Machine Maintenance Tracking
+* 📢 Notifications
+* 📊 Dashboard Analytics with Charts
+* 👤 Role-Based Dashboards (Admin, Technician, Employee)
+* 📱 Responsive Modern UI
+* 🌐 RESTful API Integration
+* 💾 MySQL Database with JSON Mock Database Fallback
 
 ---
 
-## Getting Started
+# 🛠 Tech Stack
 
-### 1. Database Setup
-Make sure you have a MySQL server running locally.
-Run the following commands, or let the initialization script do it for you:
+## Frontend
 
-Default configuration credentials in `backend/.env`:
-```env
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=password
-DB_NAME=steel_plant_db
-JWT_SECRET=supersecuresecretkey12345!@#
+* React.js (Vite)
+* Tailwind CSS
+* React Router
+* Axios
+* Chart.js
+
+## Backend
+
+* Node.js
+* Express.js
+* REST APIs
+* Multer
+* Bcrypt
+
+## Database
+
+* MySQL
+* JSON Mock Database (Offline Fallback)
+
+## Deployment
+
+* Vercel (Frontend)
+* Render (Backend)
+* Railway MySQL
+
+---
+
+# 📂 Project Structure
+
+```text
+frontend/
+backend/
 ```
 
-### 2. Backend Setup & Database Initialization
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Initialize the database schema and populate seed data (default shifts, machines, and test employee logins):
-   ```bash
-   node config/init-db.js
-   ```
-4. Start the backend developer API server:
-   ```bash
-   npm run dev
-   ```
-   The backend API will start running on `http://localhost:5000`.
+---
 
-### 3. Frontend Setup
-1. Navigate to the frontend directory:
-   ```bash
-   cd ../frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the Vite React development server:
-   ```bash
-   npm run dev
-   ```
-   The client application will launch on `http://localhost:3000` (proxied to backend on `5000`).
+# ⚙️ Getting Started
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/Avinash260805050204/employee-management.git
+cd employee-management
+```
 
 ---
 
-## Credentials (Seed Accounts)
-Log in with the following default credentials to test user roles and access permissions:
+## 2. Backend Setup
 
-| Employee ID | Password | Role | Access / Permissions |
-| :--- | :--- | :--- | :--- |
-| **EMP001** | `admin123` | **Admin** | Full system control, rosters, leave approvals, CRUD employees, statistics |
-| **EMP002** | `tech123` | **Technician** | View and update assigned machine repair requests, log check-in |
-| **EMP003** | `emp123` | **Employee** | Check-in/out, submit leave requests, report machine breakdowns (with photos) |
+Navigate to the backend folder:
+
+```bash
+cd backend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+Create a `.env` file:
+
+```env
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=your_mysql_username
+DB_PASSWORD=your_mysql_password
+DB_NAME=steel_plant_db
+JWT_SECRET=your_jwt_secret_key
+FRONTEND_URL=http://localhost:5173
+```
+
+Initialize the database:
+
+```bash
+node config/init-db.js
+```
+
+
+Start the backend server:
+
+```bash
+npm run dev
+```
+
+Backend runs on:
+
+```
+http://localhost:5000
+```
+
+---
+
+## 3. Frontend Setup
+
+Navigate to the frontend folder:
+
+```bash
+cd ../frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file:
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Frontend runs on:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 👤 Demo Mode
+
+The application is configured in **Demo Mode** for easy evaluation.
+
+Instead of logging in, users are presented with a **Role Selection** screen where they can choose one of the following roles:
+
+* 👑 Admin
+* 🔧 Technician
+* 👨‍🏭 Employee
+
+After selecting a role, the corresponding dashboard is loaded immediately.
+
+This allows reviewers to explore the complete application without authentication while preserving role-based functionality.
+
+---
+
+# 📊 Modules
+
+## Admin
+
+* Dashboard Analytics
+* Employee Management
+* Attendance Management
+* Leave Approval
+* Shift Management
+* Maintenance Monitoring
+* Notifications
+
+## Technician
+
+* Dashboard
+* Assigned Maintenance Tasks
+* Machine Status
+* Attendance
+* Notifications
+
+## Employee
+
+* Dashboard
+* Attendance
+* Leave Requests
+* Personal Information
+* Notifications
+
+---
+
+# 📈 Dashboard
+
+The dashboard provides:
+
+* Employee Statistics
+* Attendance Overview
+* Leave Summary
+* Maintenance Statistics
+* Interactive Charts
+
+---
+
+# 🔐 Authentication
+
+The original project included JWT-based authentication.
+
+For demonstration purposes, the deployed version uses a **Role Selection** interface instead of a login page, allowing reviewers to access Admin, Technician, and Employee dashboards directly.
+
+---
+
+# 🌐 Deployment
+
+Frontend:
+
+* Vercel
+
+Backend:
+
+* Render
+
+Database:
+
+* Railway MySQL
+
+---
+# 🏗 System Architecture
+
+```text
+React Frontend
+      │
+Axios API Requests
+      ▼
+Express REST API
+      │
+      ▼
+MySQL Database
+      │
+JSON Mock Database (Fallback)
+
+
+
+---
+
+# 👨‍💻 Developed By
+
+**Surya Avinash Sanapala**
+
+B.Tech Computer Science & Engineering
+
+ANITS (2023–2027)
