@@ -7,7 +7,7 @@ A full-stack, responsive web application designed to streamline employee adminis
 * 👥 Employee Management (Add, Update, Delete, Search) 
 * 📅 Attendance Management
 * 📝 Leave Management
-* ⏰ Shift Scheduling
+* ⏰ Shift Scheduling     
 * 🔧 Machine Maintenance Tracking
 * 📢 Notifications
 * 📊 Dashboard Analytics with Charts
